@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <View
+        android:id="@+id/registrationBackground"
+        android:layout_width="398dp"
+        android:layout_height="716dp"
+        android:background="#00F0EBEB"
+        android:duplicateParentState="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/registrationEmailLabel"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_account_email_label"
+        app:layout_constraintBottom_toTopOf="@+id/registrationBirthDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationLoginLabel"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_account_login_label"
+        app:layout_constraintBottom_toTopOf="@+id/registrationPasswordLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationNameLabel"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_user_name_label"
+        app:layout_constraintBottom_toTopOf="@+id/registrationLoginLabel"
+        app:layout_constraintEnd_toEndOf="@+id/registrationLoginLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationBirthDateLabel"
+        android:layout_width="131dp"
+        android:layout_height="93dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_account_birth_date_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registrationEmailLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registrationBackground"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <TextView
+        android:id="@+id/registrationPasswordLabel"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_account_password_label"
+        app:layout_constraintBottom_toTopOf="@+id/registrationConfirmPasswordLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationConfirmPasswordLabel"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:text="@string/registration_account_confirm_password_label"
+        app:layout_constraintBottom_toTopOf="@+id/registrationEmailLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/registrationUserName"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/registration_user_name_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/registrationAccountLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationAccountLogin" />
+
+    <EditText
+        android:id="@+id/registrationAccountLogin"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/registration_account_login_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/registrationAccountPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationAccountPassword" />
+
+    <EditText
+        android:id="@+id/registrationAccountEmail"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/registration_account_email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/registrationBirthDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/registrationEmailLabel" />
+
+    <EditText
+        android:id="@+id/registrationAccountPassword"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/registration_account_password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/registrationAccountConfirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationAccountConfirmPassword" />
+
+    <EditText
+        android:id="@+id/registrationAccountConfirmPassword"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/registration_account_confirm_password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/registrationAccountEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationAccountEmail" />
+
+    <Button
+        android:id="@+id/doRegistrationButton"
+        android:layout_width="127dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:onClick="registrationUser"
+        android:text="@string/registration_button"
+        app:layout_constraintEnd_toEndOf="@+id/registrationAccountEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationBirthDate" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="305dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/registration_title"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/registrationNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/registrationNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/registrationBackground"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <DatePicker
+        android:id="@+id/registrationBirthDate"
+        android:layout_width="222dp"
+        android:layout_height="93dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:scrollbarSize="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registrationBirthDateLabel"
+        app:layout_constraintEnd_toEndOf="@+id/registrationAccountEmail"
+        app:layout_constraintStart_toStartOf="@+id/registrationAccountEmail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

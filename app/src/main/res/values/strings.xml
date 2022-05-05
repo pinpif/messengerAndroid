@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">messenger.android</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="registration_user_name_hint">Name</string>
+    <string name="registration_user_name_label">Name</string>
+    <string name="registration_account_login_hint">Login</string>
+    <string name="registration_account_login_label">Login</string>
+    <string name="registration_account_password_hint">Password</string>
+    <string name="registration_account_password_label">Password</string>
+    <string name="registration_account_birth_date_label">Birth Date</string>
+    <string name="registration_account_confirm_password_hint">Confirm Password</string>
+    <string name="registration_account_confirm_password_label">Confirm Password</string>
+    <string name="registration_account_email_hint">Email</string>
+    <string name="registration_account_email_label">Email</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_button">Registration</string>
+
+    <string name="registration_empty_name_error">Name is mandatory</string>
+    <string name="registration_empty_login_error">Login is mandatory</string>
+    <string name="registration_empty_password_error">Password is mandatory</string>
+    <string name="registration_empty_confirm_password_error">Password and confirm password should be same</string>
+    <string name="registration_empty_birth_date_error">Birth Date is mandatory</string>
+    <string name="registration_empty_email_error">Email is mandatory</string>
+</resources>
